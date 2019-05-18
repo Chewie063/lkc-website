@@ -1,8 +1,11 @@
-<<<<<<< HEAD
 :root {
-  --color-primary: #eb2f64;
-  --color-primary-light: #FF3366;
-  --color-primary-dark: #BA265D;
+  --color-primary: #ffb9f7;
+  --color-primary-dark: #ff4cea;
+
+  --color-grey-light-1: #d0d0d0;
+  --color-grey-light-2: #ddc6da;
+  --color-grey-dark-1: #404040;
+  --color-grey-dark-2: #323232;
 
   --shadow-light: 0 2rem 5rem rgba(0,0,0,.1);
 
@@ -37,7 +40,7 @@ html {
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   line-height: 1.6;
   background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark));
@@ -46,52 +49,3 @@ body {
   min-height: 100vh;
   color: var(--color-grey-dark-2);
 }
-=======
-:root {
-  --color-primary: #eb2f64;
-  --color-primary-light: #FF3366;
-  --color-primary-dark: #BA265D;
-
-  --shadow-light: 0 2rem 5rem rgba(0,0,0,.1);
-
-  --line: 1px solid var(--color-grey-light-3);
-}
-
-$bp-largest: 75em;      //1200px
-$bp-large: 68.75em;     //1100px
-$bp-medium: 56.25em;    //900px
-$bp-small: 37.5em;      //600px
-$bp-smallest: 31.25em;  //500px
-$bp-tiny: 27.5em;       //420px
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-html {
-  box-sizing: border-box;
-  font-size: 62.5%;  //1rem = 10px   10px/16px = .625 = 62.5%
-
-  @media only screen and (max-width: $bp-large) {
-    font-size: 50%;
-  }
-}
-
-body {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  line-height: 1.6;
-  background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark));
-  background-size: cover;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-  color: var(--color-grey-dark-2);
-}
->>>>>>> 0ed8b93a462f33364221c06bec7e7add653789d2
