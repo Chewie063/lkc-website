@@ -1,18 +1,22 @@
 .container {
   max-width: 120rem;
   margin: 8rem auto;
-  background-color: var(--color-grey-light-1);
-  box-shadow: var(--shadow-dark);
 }
 
 .header {
   font-size: 1.4rem;
-  height: 7rem;
-  background-color: $color-grey-light-1;
-  border-bottom: var(--line);
+  height: 10rem;
+  border-bottom: var(--line-pink);
+  background-color: orangered;
+
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  &-phoneNumber {
+    font-size: 2rem;
+  }
 }
 
 .hero {
@@ -20,5 +24,5 @@
 }
 
 .content{
-  
+
 }
