@@ -3,20 +3,19 @@
   margin: 8rem auto;
 }
 
+////////////////////////////////////////
+// HEADER
+
 .header {
-  font-size: 1.4rem;
-  height: 10rem;
-  border-bottom: var(--line-pink);
+  font-size: 14px;
+  height: 150px;
+  border-bottom: 2px pink solid;
   background-color: orangered;
 
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
-
-  &-phoneNumber {
-    font-size: 2rem;
-  }
+  display: grid;
+  grid-template-rows: repeat(3, 50px);
+  grid-template-columns: 200px 1fr;
+  grid-gap: 10px;
 }
 
 .hero {
