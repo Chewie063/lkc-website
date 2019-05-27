@@ -7,15 +7,16 @@
 // HEADER
 
 .header {
-  font-size: 14px;
-  height: 150px;
+  font-family: Overlock, sans-serif;
+  font-size: 1.4rem;
+  height: 15rem;
   border-bottom: 2px var(--color-primary) solid;
-
 
   display: grid;
   grid-template-rows: repeat(3, 50px);
   grid-template-columns: 2rem 1fr;
   grid-gap: 10px;
+  position: relative;
 }
 
 .hero {
@@ -27,6 +28,9 @@
   align-items: flex-end;
 
   &-content{
+    font-family: "Montserrat", sans-serif;
+    position: relative;
+    z-index: 200;
     font-size: 4rem;
     color: #fff;
     text-align: right;
