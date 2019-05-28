@@ -65,8 +65,22 @@ body {
     text-align: right;
     font-weight: 800;
     width: 30%;
-    padding: 5px;
-    margin: 5px 6rem 6rem 5px; }
+    padding: .5rem;
+    margin: .5rem 6rem 6rem .5rem; }
+
+.content {
+  width: 100%;
+  padding: 1rem;
+  margin: 4rem 6rem;
+  display: flex; }
+  .content-aboutus {
+    width: 50%; }
+    .content-aboutus-text {
+      width: 50%;
+      padding: 0;
+      margin: 0 1rem 0 0; }
+  .content-newsletter {
+    width: 50%; }
 
 .logo {
   height: 20rem;
@@ -117,3 +131,10 @@ body {
   background-color: var(--color-box);
   width: 58rem;
   height: 30rem; }
+
+.heading {
+  font-family: "Montserrat", sans-serif;
+  font-size: 4rem;
+  font-weight: 800;
+  color: var(--color-grey-dark-2);
+  line-height: 5rem; }

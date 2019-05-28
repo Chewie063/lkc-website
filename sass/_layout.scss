@@ -36,7 +36,29 @@
     text-align: right;
     font-weight: 800;
     width: 30%;
-    padding: 5px;
-    margin: 5px 6rem 6rem 5px;
+    padding: .5rem;
+    margin: .5rem 6rem 6rem .5rem;
+  }
+}
+
+.content {
+  width: 100%;
+  padding: 1rem;
+  margin: 4rem 6rem;
+  display: flex;
+
+  &-aboutus {
+
+    width: 50%;
+    
+    &-text {
+      width: 50%;
+      padding: 0;
+      margin: 0 1rem 0 0;
+    }
+  }
+
+  &-newsletter {
+    width: 50%;
   }
 }
