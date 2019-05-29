@@ -62,8 +62,8 @@
 
 .color-box {
   position: absolute;
-  right: 10rem;
-  bottom: -25rem;
+  right: 12rem;
+  bottom: -23rem;
   z-index: 100;
   content: "";
   background-color: var(--color-box);
@@ -77,4 +77,5 @@
   font-weight: 800;
   color: var(--color-grey-dark-2);
   line-height: 5rem;
+  padding-bottom: 1.5rem;
 }

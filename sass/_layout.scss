@@ -42,23 +42,42 @@
 }
 
 .content {
-  width: 100%;
+  width: 85%;
   padding: 1rem;
-  margin: 4rem 6rem;
+  margin: 4rem auto;
   display: flex;
 
   &-aboutus {
-
     width: 50%;
     
     &-text {
-      width: 50%;
+      width: 90%;
       padding: 0;
       margin: 0 1rem 0 0;
+      font-size: 1.5rem;
+      line-height: 1.9;
     }
   }
 
   &-newsletter {
     width: 50%;
+
+    &-emailfield {
+      width: 50rem;
+      height: 7rem;
+      background-color: var(--color-grey-light-2);
+      border-radius: 5px;
+      border: 1px orangered solid;
+      display: flex;
+      justify-content: flex-end;
+
+      &__button {
+        color: white;
+        width: 8rem;
+        height: inherit;
+        background-color: black;
+        border-radius: 0 5px 5px 0;
+      }
+    }
   }
 }

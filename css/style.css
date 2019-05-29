@@ -29,7 +29,7 @@ html {
 
 body {
   font-family: "Montserrat", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.6;
   min-height: 100vh;
   color: var(--color-grey-dark-2); }
@@ -69,18 +69,34 @@ body {
     margin: .5rem 6rem 6rem .5rem; }
 
 .content {
-  width: 100%;
+  width: 85%;
   padding: 1rem;
-  margin: 4rem 6rem;
+  margin: 4rem auto;
   display: flex; }
   .content-aboutus {
     width: 50%; }
     .content-aboutus-text {
-      width: 50%;
+      width: 90%;
       padding: 0;
-      margin: 0 1rem 0 0; }
+      margin: 0 1rem 0 0;
+      font-size: 1.5rem;
+      line-height: 1.9; }
   .content-newsletter {
     width: 50%; }
+    .content-newsletter-emailfield {
+      width: 50rem;
+      height: 7rem;
+      background-color: var(--color-grey-light-2);
+      border-radius: 5px;
+      border: 1px orangered solid;
+      display: flex;
+      justify-content: flex-end; }
+      .content-newsletter-emailfield__button {
+        color: white;
+        width: 8rem;
+        height: inherit;
+        background-color: black;
+        border-radius: 0 5px 5px 0; }
 
 .logo {
   height: 20rem;
@@ -124,8 +140,8 @@ body {
 
 .color-box {
   position: absolute;
-  right: 10rem;
-  bottom: -25rem;
+  right: 12rem;
+  bottom: -23rem;
   z-index: 100;
   content: "";
   background-color: var(--color-box);
@@ -137,4 +153,5 @@ body {
   font-size: 4rem;
   font-weight: 800;
   color: var(--color-grey-dark-2);
-  line-height: 5rem; }
+  line-height: 5rem;
+  padding-bottom: 1.5rem; }
