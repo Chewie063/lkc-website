@@ -9,6 +9,7 @@
   --color-grey-dark-2: #333;
   --shadow-light: 0 1rem 3rem rgba(0,0,0,.1);
   --shadow-dark: 0 1rem 3rem rgba(0,0,0,.4);
+  --inner-shadow-dark: inset 1px 1px 2px rgba(64, 64, 64, .7);
   --line-pink: 1px solid var(--color-primary-dark); }
 
 * {
@@ -84,19 +85,39 @@ body {
   .content-newsletter {
     width: 50%; }
     .content-newsletter-emailfield {
+      position: relative;
+      z-index: 1;
       width: 50rem;
       height: 7rem;
       background-color: var(--color-grey-light-2);
       border-radius: 5px;
-      border: 1px orangered solid;
       display: flex;
-      justify-content: flex-end; }
+      justify-content: flex-end;
+      box-shadow: var(--inner-shadow-dark); }
+      .content-newsletter-emailfield-text {
+        width: 100%;
+        color: rgba(64, 64, 64, 0.5);
+        font-size: 2.5rem;
+        text-align: left;
+        padding: 1rem 2rem;
+        margin: auto 1.5rem; }
       .content-newsletter-emailfield__button {
-        color: white;
-        width: 8rem;
+        position: relative;
+        z-index: 2;
+        width: 10rem;
         height: inherit;
-        background-color: black;
-        border-radius: 0 5px 5px 0; }
+        background-color: #FFF;
+        border-radius: 0 5px 5px 0;
+        box-shadow: inset 0 1px 2px rgba(64, 64, 64, 0.7);
+        display: flex;
+        justify-content: center; }
+        .content-newsletter-emailfield__button .arrow-right {
+          margin: auto;
+          width: 0;
+          height: 0;
+          border-top: 1.8rem solid transparent;
+          border-bottom: 1.8rem solid transparent;
+          border-left: 3.1rem solid var(--color-primary); }
 
 .logo {
   height: 20rem;
