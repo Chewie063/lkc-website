@@ -106,3 +106,32 @@
     }
   }
 }
+
+.gallery {
+  background-color: var(--color-primary-light);
+
+  &-container {
+    width: 80%;
+
+    
+    &-item {
+      width: 28rem;
+      height: 40rem;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+
+      &-1 {
+        background-image: url("../images/mintchocolatefrosted.png");
+      }
+
+      &-2 {
+        background-image: url("../images/whoppers.png");
+      }
+
+      &-3 {
+        background-image: url("../images/cnadyexplosion.png");
+      }
+    } 
+  }
+}

@@ -9,7 +9,7 @@
   --color-grey-dark-2: #333;
   --shadow-light: 0 1rem 3rem rgba(0,0,0,.1);
   --shadow-dark: 0 1rem 3rem rgba(0,0,0,.4);
-  --inner-shadow-dark: inset 1px 1px 2px rgba(64, 64, 64, .7);
+  --inner-shadow-dark: inset 1px 1px 4px rgba(64, 64, 64, .8);
   --line-pink: 1px solid var(--color-primary-dark); }
 
 * {
@@ -118,6 +118,23 @@ body {
           border-top: 1.8rem solid transparent;
           border-bottom: 1.8rem solid transparent;
           border-left: 3.1rem solid var(--color-primary); }
+
+.gallery {
+  background-color: var(--color-primary-light); }
+  .gallery-container {
+    width: 80%; }
+    .gallery-container-item {
+      width: 28rem;
+      height: 40rem;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 50% 50%; }
+      .gallery-container-item-1 {
+        background-image: url("../images/mintchocolatefrosted.png"); }
+      .gallery-container-item-2 {
+        background-image: url("../images/whoppers.png"); }
+      .gallery-container-item-3 {
+        background-image: url("../images/cnadyexplosion.png"); }
 
 .logo {
   height: 20rem;
