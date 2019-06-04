@@ -111,7 +111,10 @@
   background-color: var(--color-primary-light);
 
   &-container {
-    width: 80%;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 7rem 7rem 16rem;
 
     
     &-item {
@@ -120,6 +123,10 @@
       background-size: cover;
       background-repeat: no-repeat;
       background-position: 50% 50%;
+      justify-self: center;
+      border-radius: 1rem;
+      box-shadow: var(--shadow-images);
+
 
       &-1 {
         background-image: url("../images/mintchocolatefrosted.png");
