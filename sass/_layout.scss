@@ -108,37 +108,58 @@
 }
 
 .gallery {
-  background-color: var(--color-primary-light);
 
   &-container {
+    background-color: var(--color-primary-light);
+
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: repeat(3, 1fr);
     padding: 7rem 7rem 16rem;
-
-    
-    &-item {
-      width: 28rem;
-      height: 40rem;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: 50% 50%;
-      justify-self: center;
-      border-radius: 1rem;
-      box-shadow: var(--shadow-images);
-
-
-      &-1 {
-        background-image: url("../images/mintchocolatefrosted.png");
-      }
-
-      &-2 {
-        background-image: url("../images/whoppers.png");
-      }
-
-      &-3 {
-        background-image: url("../images/cnadyexplosion.png");
-      }
-    } 
   }
+
+  &-image {
+    width: 28rem;
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    justify-self: center;
+    border-radius: 1rem;
+    box-shadow: var(--shadow-images);
+    text-decoration: none;
+
+    &-1 {
+      background-image: url("../images/mintchocolatefrosted.png");
+
+      &-desc {
+        display: block;
+        color: #FFF;
+        text-align: center;
+        font-size: 2rem;
+        padding: 2rem 5rem;
+        background: var(--color-img-hover);
+        height: 30%;
+        border-radius: 0 0 1rem 1rem;
+      }
+
+      &:link, &:visited {
+        text-decoration: none;
+      }
+
+      &:hover {
+
+
+                 
+      }
+    }
+
+    &-2 {
+      background-image: url("../images/whoppers.png");
+    }
+
+    &-3 {
+      background-image: url("../images/cnadyexplosion.png");
+    }
+  } 
 }
