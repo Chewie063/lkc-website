@@ -119,6 +119,7 @@
   }
 
   &-image {
+    position: relative;
     width: 28rem;
     height: 40rem;
     background-size: cover;
@@ -133,24 +134,10 @@
       background-image: url("../images/mintchocolatefrosted.png");
 
       &-desc {
-        display: block;
         color: #FFF;
         text-align: center;
         font-size: 2rem;
         padding: 2rem 5rem;
-        background: var(--color-img-hover);
-        height: 30%;
-        border-radius: 0 0 1rem 1rem;
-      }
-
-      &:link, &:visited {
-        text-decoration: none;
-      }
-
-      &:hover {
-
-
-                 
       }
     }
 
@@ -160,6 +147,35 @@
 
     &-3 {
       background-image: url("../images/cnadyexplosion.png");
+    }
+
+    &-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      background: var(--color-img-hover);
+      opacity: 0;
+      transition: .5s ease;
+
+      /*position: absolute;
+      bottom: 0;
+      color: #FFF;
+      text-align: center;
+      font-size: 2rem;
+      padding: 2rem 5rem;
+      background: var(--color-img-hover);
+      height: 30%;
+      border-radius: 0 0 1rem 1rem;
+      opacity: 0;
+      transition: .5s ease;*/
+    }
+    
+    &:hover .gallery-image-overlay {
+      opacity: .9;
+      height: 30%;  
     }
   } 
 }
