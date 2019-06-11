@@ -4,7 +4,7 @@
   --color-primary: #ff75ea;
 
   --color-box: rgba(255, 117, 234, .2);
-  --color-img-hover: rgba(0, 0, 0, .5);
+  --color-img-hover: rgba(0, 0, 0, .8);
 
   --color-grey-light-1: #d0d0d0;
   --color-grey-light-2: #ddc6da;
@@ -17,6 +17,8 @@
   --inner-shadow-dark: inset 1px 1px 4px rgba(64, 64, 64, .8);
 
   --line-pink: 1px solid var(--color-primary-dark);
+
+  --transitions: all .5s ease;
 }
 
 $bp-largest: 75em;      //1200px
@@ -51,5 +53,4 @@ body {
   font-weight: 300;
   line-height: 1.6;
   min-height: 100vh;
-  color: var(--color-grey-dark-2);
 }

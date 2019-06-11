@@ -19,6 +19,9 @@
   position: relative;
 }
 
+////////////////////////////////////////
+// HERO
+
 .hero {
   width: 100%;
   height: 60rem;
@@ -40,6 +43,9 @@
     margin: .5rem 6rem 6rem .5rem;
   }
 }
+
+////////////////////////////////////////
+// CONTENT
 
 .content {
   width: 85%;
@@ -107,6 +113,9 @@
   }
 }
 
+////////////////////////////////////////
+// GALLERY
+
 .gallery {
 
   &-container {
@@ -130,15 +139,15 @@
     box-shadow: var(--shadow-images);
     text-decoration: none;
 
+    &-desc {
+      color: #FFF;
+      text-align: center;
+      font-size: 2rem;
+      padding: 2rem 5rem;
+    }
+
     &-1 {
       background-image: url("../images/mintchocolatefrosted.png");
-
-      &-desc {
-        color: #FFF;
-        text-align: center;
-        font-size: 2rem;
-        padding: 2rem 5rem;
-      }
     }
 
     &-2 {
@@ -154,23 +163,12 @@
       bottom: 0;
       left: 0;
       right: 0;
-      height: 100%;
+      height: 0;
       width: 100%;
       background: var(--color-img-hover);
-      opacity: 0;
-      transition: .5s ease;
-
-      /*position: absolute;
-      bottom: 0;
-      color: #FFF;
-      text-align: center;
-      font-size: 2rem;
-      padding: 2rem 5rem;
-      background: var(--color-img-hover);
-      height: 30%;
       border-radius: 0 0 1rem 1rem;
       opacity: 0;
-      transition: .5s ease;*/
+      transition: var(--transitions);
     }
     
     &:hover .gallery-image-overlay {

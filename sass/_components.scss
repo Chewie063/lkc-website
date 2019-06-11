@@ -17,37 +17,42 @@
   grid-column: 2 / 3;
   grid-row: 2 / 3;
   justify-self: end;
-  margin-top: 30px;
+  margin-top: 3rem;
   
   &-container {
     text-transform: uppercase;
     display: flex;
   }
   
+  a {
+    &:link, &:visited {
+      text-decoration: none;
+    }
+  }
+
   &-item {
     font-weight: 700;
     font-size: 1.6rem;
     flex: 1 0 auto;
     letter-spacing: .04em;
-    margin: 0 15px;
-    padding: 0 5px;
+    margin: 0 .25rem;
+    width: 13rem;
+    height: 5.5rem;
+    padding: 1rem;
+    text-align: center;
+    line-height: 4rem;
+    background-color: transparent;
+    color: var(--color-grey-dark-2);
+    transition: all .5s ease;
+
+    &:hover {
+      background-color: var(--color-primary-dark);
+      color: #FFF;
+    }
 
     &:last-child {
       padding-right: 0;
       margin-right: 0;
-    }
-
-    a {
-      &:link, &:visited {
-        text-decoration: none;
-        color: var(--color-grey-dark-2);
-      }
-
-      &:hover {
-        color: var(--color-primary-dark);
-        padding-bottom: 1rem;
-        border-bottom: 2px var(--color-primary-dark) solid;
-      }
     }
   }
 }
