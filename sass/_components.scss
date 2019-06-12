@@ -38,11 +38,10 @@
     margin: 0 .25rem;
     width: 13rem;
     height: 5.5rem;
-    padding: 1rem;
+    padding: 1rem 0;
     text-align: center;
     line-height: 4rem;
     background-color: transparent;
-    color: var(--color-grey-dark-2);
     transition: all .5s ease;
 
     &:hover {

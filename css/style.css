@@ -124,7 +124,7 @@ body {
 .gallery-container {
   background-color: var(--color-primary-light);
   display: grid;
-  grid-template-rows: 1fr;
+  grid-template-rows: 1fr 1fr;
   grid-template-columns: repeat(3, 1fr);
   padding: 7rem 7rem 16rem; }
 
@@ -138,7 +138,8 @@ body {
   justify-self: center;
   border-radius: 1rem;
   box-shadow: var(--shadow-images);
-  text-decoration: none; }
+  text-decoration: none;
+  overflow: hidden; }
   .gallery-image-desc {
     color: #FFF;
     text-align: center;
@@ -155,15 +156,27 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 0;
+    height: 30%;
     width: 100%;
     background: var(--color-img-hover);
     border-radius: 0 0 1rem 1rem;
+    display: hidden;
     opacity: 0;
+    transform: translateY(10rem);
     transition: var(--transitions); }
   .gallery-image:hover .gallery-image-overlay {
     opacity: .9;
-    height: 30%; }
+    transform: translateY(0);
+    display: block; }
+
+.gallery-dot-indicators {
+  display: grid;
+  grid-template-rows: 3rem;
+  grid-template-columns: repeat(3, 4rem);
+  height: 3rem;
+  width: 3rem;
+  border-radius: 3rem;
+  background-color: var(--color-grey-dark-2); }
 
 .logo {
   height: 20rem;
@@ -190,11 +203,10 @@ body {
     margin: 0 .25rem;
     width: 13rem;
     height: 5.5rem;
-    padding: 1rem;
+    padding: 1rem 0;
     text-align: center;
     line-height: 4rem;
     background-color: transparent;
-    color: var(--color-grey-dark-2);
     transition: all .5s ease; }
     .nav-item:hover {
       background-color: var(--color-primary-dark);

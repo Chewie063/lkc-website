@@ -122,7 +122,7 @@
     background-color: var(--color-primary-light);
 
     display: grid;
-    grid-template-rows: 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-columns: repeat(3, 1fr);
     padding: 7rem 7rem 16rem;
   }
@@ -138,6 +138,7 @@
     border-radius: 1rem;
     box-shadow: var(--shadow-images);
     text-decoration: none;
+    overflow: hidden;
 
     &-desc {
       color: #FFF;
@@ -163,17 +164,31 @@
       bottom: 0;
       left: 0;
       right: 0;
-      height: 0;
+      height: 30%;
       width: 100%;
       background: var(--color-img-hover);
       border-radius: 0 0 1rem 1rem;
+      display: hidden;
       opacity: 0;
+      transform: translateY(10rem);
       transition: var(--transitions);
     }
     
     &:hover .gallery-image-overlay {
       opacity: .9;
-      height: 30%;  
+      transform: translateY(0);
+      display: block;
     }
-  } 
+  }
+
+  &-dot-indicators {
+    display: grid;
+    grid-template-rows: 3rem;
+    grid-template-columns: repeat(3, 4rem);
+
+    height: 3rem;
+    width: 3rem;
+    border-radius: 3rem;
+    background-color: var(--color-grey-dark-2);
+  }
 }
