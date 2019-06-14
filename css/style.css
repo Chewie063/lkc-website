@@ -1,6 +1,6 @@
 :root {
   --color-primary-light: #ffb9f7;
-  --color-primary-dark: #ff4cea;
+  --color-primary-dark: #db44c4;
   --color-primary: #ff75ea;
   --color-box: rgba(255, 117, 234, .2);
   --color-img-hover: rgba(0, 0, 0, .8);
@@ -10,6 +10,7 @@
   --color-grey-dark-2: #333;
   --shadow-light: 0 1rem 3rem rgba(0,0,0,.1);
   --shadow-dark: 0 1rem 3rem rgba(0,0,0,.4);
+  --shadow-dark-2: 0 .5rem .5rem rgba(0,0,0,.5);
   --shadow-images: 2rem 2rem 0.5rem rgba(255, 76, 234, .3);
   --inner-shadow-dark: inset 1px 1px 4px rgba(64, 64, 64, .8);
   --line-pink: 1px solid var(--color-primary-dark);
@@ -35,7 +36,8 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
   line-height: 1.6;
-  min-height: 100vh; }
+  min-height: 100vh;
+  font-size: 1.4rem; }
 
 .container {
   max-width: 120rem;
@@ -126,7 +128,8 @@ body {
   display: grid;
   grid-template-rows: repeat 2, 1fr;
   grid-template-columns: repeat(3, 1fr);
-  padding: 7rem 7rem 16rem; }
+  padding: 7rem;
+  box-shadow: var(--shadow-dark-2); }
 
 .gallery-image {
   position: relative;
@@ -186,8 +189,16 @@ body {
   background-color: var(--color-grey-dark-2);
   justify-self: center; }
 
-.gallery.direction-left .gallery-dots {
-  float: right; }
+.testimonial {
+  background-color: var(--color-grey-light-2);
+  height: 50rem; }
+  .testimonial-container {
+    width: 50%;
+    margin: auto; }
+  .testimonial-quote {
+    font-family: 'Passion One', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 7rem;
+    color: var(--color-primary-dark); }
 
 .logo {
   height: 20rem;

@@ -124,7 +124,8 @@
     display: grid;
     grid-template-rows: repeat (2, 1fr);
     grid-template-columns: repeat(3, 1fr);
-    padding: 7rem 7rem 16rem;
+    padding: 7rem;
+    box-shadow: var(--shadow-dark-2);
   }
 
   &-image {
@@ -199,8 +200,32 @@
     background-color: var(--color-grey-dark-2);
     justify-self: center;
   }
+}
 
-  &.direction-left .gallery-dots {
-    float: right;
+////////////////////////////////////////
+// TESTIMONIALS
+
+.testimonial {
+
+  background-color: var(--color-grey-light-2);
+  height: 50rem;
+
+  &-container {
+    width: 50%;
+    margin: auto;
+  }
+  
+  &-quote {
+    font-family: 'Passion One', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 7rem;
+    color: var(--color-primary-dark);
+  }
+
+  &-text {
+
+  }
+
+  &-name {
+
   }
 }
