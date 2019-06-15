@@ -8,9 +8,10 @@
   --color-grey-light-2: #ddc6da;
   --color-grey-dark-1: #404040;
   --color-grey-dark-2: #333;
+  --color-grey-1: rgb(124, 124, 124);
   --shadow-light: 0 1rem 3rem rgba(0,0,0,.1);
   --shadow-dark: 0 1rem 3rem rgba(0,0,0,.4);
-  --shadow-dark-2: 0 .5rem .5rem rgba(0,0,0,.5);
+  --shadow-dark-2: 0 .25rem rgba(0,0,0,.2);
   --shadow-images: 2rem 2rem 0.5rem rgba(255, 76, 234, .3);
   --inner-shadow-dark: inset 1px 1px 4px rgba(64, 64, 64, .8);
   --line-pink: 1px solid var(--color-primary-dark);
@@ -124,6 +125,8 @@ body {
           border-left: 3.1rem solid var(--color-primary); }
 
 .gallery-container {
+  position: relative;
+  z-index: 10;
   background-color: var(--color-primary-light);
   display: grid;
   grid-template-rows: repeat 2, 1fr;
@@ -190,15 +193,37 @@ body {
   justify-self: center; }
 
 .testimonial {
+  position: relative;
+  z-index: 1;
   background-color: var(--color-grey-light-2);
-  height: 50rem; }
+  height: 45rem;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
   .testimonial-container {
-    width: 50%;
-    margin: auto; }
+    width: 65%;
+    margin: 0 auto; }
   .testimonial-quote {
+    position: relative;
+    top: 2.4rem;
+    left: -39rem;
+    line-height: 1rem;
     font-family: 'Passion One', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 7rem;
+    font-size: 10rem;
     color: var(--color-primary-dark); }
+  .testimonial-text {
+    position: relative;
+    width: 100%;
+    padding: 2rem;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 3rem;
+    color: var(--color-grey-dark-1); }
+  .testimonial-name {
+    color: var(--color-grey-1);
+    text-align: center;
+    margin: 0;
+    font-size: 1.5rem; }
 
 .logo {
   height: 20rem;
@@ -244,7 +269,7 @@ body {
   grid-row: 1 / 2;
   justify-self: end; }
 
-.color-box {
+.color-box--1 {
   position: absolute;
   right: 12rem;
   bottom: -23rem;
@@ -253,6 +278,16 @@ body {
   background-color: var(--color-box);
   width: 58rem;
   height: 30rem; }
+
+.color-box--2 {
+  position: absolute;
+  right: 22rem;
+  bottom: 3rem;
+  z-index: 100;
+  content: "";
+  background-color: var(--color-box);
+  width: 65rem;
+  height: 33rem; }
 
 .heading {
   font-family: "Montserrat", sans-serif;

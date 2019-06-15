@@ -64,7 +64,7 @@
   justify-self: end;
 }
 
-.color-box {
+.color-box--1 {
   position: absolute;
   right: 12rem;
   bottom: -23rem;
@@ -74,6 +74,18 @@
   width: 58rem;
   height: 30rem;
 }
+
+.color-box--2 {
+  position: absolute;
+  right: 22rem;
+  bottom: 3rem;
+  z-index: 100;
+  content: "";
+  background-color: var(--color-box);
+  width: 65rem;
+  height: 33rem;
+}
+
 
 .heading {
   font-family: "Montserrat", sans-serif;

@@ -119,13 +119,15 @@
 .gallery {
 
   &-container {
+    position: relative;
+    z-index: 10;
     background-color: var(--color-primary-light);
 
     display: grid;
     grid-template-rows: repeat (2, 1fr);
     grid-template-columns: repeat(3, 1fr);
     padding: 7rem;
-    box-shadow: var(--shadow-dark-2);
+    box-shadow: var(--shadow-dark-2)
   }
 
   &-image {
@@ -206,26 +208,43 @@
 // TESTIMONIALS
 
 .testimonial {
-
+  position: relative;
+  z-index: 1;
   background-color: var(--color-grey-light-2);
-  height: 50rem;
+  height: 45rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   &-container {
-    width: 50%;
-    margin: auto;
+    width: 65%;
+    margin: 0 auto;
   }
   
   &-quote {
+    position: relative;
+    top: 2.4rem;
+    left: -39rem;
+    line-height: 1rem;
     font-family: 'Passion One', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 7rem;
+    font-size: 10rem;
     color: var(--color-primary-dark);
   }
 
   &-text {
-
+    position: relative;
+    width: 100%;
+    padding: 2rem;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 3rem;
+    color: var(--color-grey-dark-1);
   }
 
   &-name {
-
+    color: var(--color-grey-1);
+    text-align: center;
+    margin: 0;
+    font-size: 1.5rem;
   }
 }
