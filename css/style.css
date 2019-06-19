@@ -225,6 +225,35 @@ body {
     margin: 0;
     font-size: 1.5rem; }
 
+.footer {
+  background-color: var(--color-grey-dark-2);
+  width: 100%;
+  height: 40rem;
+  padding: 8rem; }
+  .footer-text {
+    color: #FFF;
+    line-height: 2.7rem; }
+    .footer-text--address {
+      padding-bottom: 2rem; }
+    .footer-text--header {
+      font-size: 2rem;
+      padding-bottom: 2rem; }
+    .footer-text--email {
+      font-weight: 600; }
+  .footer-social--icons {
+    height: 5rem;
+    width: 5rem; }
+  .footer-social--fb {
+    background-image: url("../images/fb.png"); }
+  .footer-social--ig {
+    background-image: url("../images/ig.png"); }
+  .footer-social--tw {
+    background-image: url("../images/tw.png"); }
+  .footer-map {
+    width: 28.3rem;
+    height: 30rem;
+    background-image: url("../images/map.jpg"); }
+
 .logo {
   height: 20rem;
   width: 20rem;

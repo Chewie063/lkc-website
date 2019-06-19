@@ -248,3 +248,53 @@
     font-size: 1.5rem;
   }
 }
+
+////////////////////////////////////////
+// FOOTER
+
+.footer {
+
+  background-color: var(--color-grey-dark-2);
+  width: 100%;
+  height: 40rem;
+  padding: 8rem;
+
+  &-text {
+
+    color: #FFF;
+    line-height: 2.7rem;
+    
+    &--address {
+      padding-bottom: 2rem;
+    }
+
+    &--header {
+      font-size: 2rem;
+      padding-bottom: 2rem;
+    }
+
+    &--email {
+      font-weight: 600;
+    }
+  }
+
+  &-social {
+
+    &--icons {
+      height: 5rem;
+      width: 5rem;
+    }
+
+    &--fb {background-image: url('../images/fb.png');}
+
+    &--ig {background-image: url('../images/ig.png');}
+
+    &--tw {background-image: url('../images/tw.png');}
+  }
+
+  &-map {
+    width: 28.3rem;
+    height: 30rem;
+    background-image: url('../images/map.jpg');
+  }
+}
